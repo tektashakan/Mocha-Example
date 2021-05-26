@@ -1,0 +1,20 @@
+{
+  "name": "javascript_selenium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "example": "mocha --timeout 60000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chromedriver": "^90.0.1",
+    "mocha": "^8.4.0",
+    "selenium-webdriver": "^4.0.0-beta.3"
+  },
+  "devDependencies": {
+    "mochawesome": "^6.2.2"
+  }
+}

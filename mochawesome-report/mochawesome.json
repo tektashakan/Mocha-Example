@@ -1,0 +1,161 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-26T23:25:27.982Z",
+    "end": "2021-05-26T23:25:27.995Z",
+    "duration": 13,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ab89e0b3-c0a6-4019-9888-02085118f8a8",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "28b347f6-13f8-4ba6-93fd-281a16666821",
+          "title": "Basic Mocha -JS Exampla",
+          "fullFile": "/Users/hakantektas/example_mocha_js/test/mocha_test.js",
+          "file": "/test/mocha_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Basic Mocha -JS Exampla\"",
+              "fullTitle": "Basic Mocha -JS Exampla \"before each\" hook in \"Basic Mocha -JS Exampla\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var baseurl='https://www.sahibinden.com/';\ndriver.get(baseurl);",
+              "err": {},
+              "uuid": "5913b7e7-e96c-4c5e-9e9f-8f0f02413749",
+              "parentUUID": "28b347f6-13f8-4ba6-93fd-281a16666821",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Basic Mocha -JS Exampla\"",
+              "fullTitle": "Basic Mocha -JS Exampla \"after each\" hook in \"Basic Mocha -JS Exampla\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//driver.quit();",
+              "err": {},
+              "uuid": "b5a1aa5a-406d-4543-a048-93261946bc4a",
+              "parentUUID": "28b347f6-13f8-4ba6-93fd-281a16666821",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Check Title",
+              "fullTitle": "Basic Mocha -JS Exampla Check Title",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Enter test steps\ndriver.getTitle().then(function(title){\n    assert.equal(title,ELEMENT.TITLE)\n});\ndriver.sleep('1000');",
+              "err": {},
+              "uuid": "3a5dcb4d-dbb0-4afc-82cb-671abd2dc395",
+              "parentUUID": "28b347f6-13f8-4ba6-93fd-281a16666821",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login Success",
+              "fullTitle": "Basic Mocha -JS Exampla Login Success",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Enter test steps\n//driver.wait(until.elementLocated(By.xpath(ELEMENT.SEARCH_TXT)),1000).then(function(){\ndriver.findElement(By.xpath(ELEMENT.girisYapBtn)).click();\ndriver.sleep('3000');\ndriver.findElement(By.xpath(ELEMENT.usernameTxt)).sendKeys('xluck@onlinecmail.com');\ndriver.findElement(By.xpath(ELEMENT.passwordTxt)).sendKeys('123456Aa.');\ndriver.findElement(By.id(ELEMENT.loginBtn)).click();\ndriver.sleep('1000');\n               // });",
+              "err": {},
+              "uuid": "308240e7-0cb5-4e06-a2ad-ad8634ba9165",
+              "parentUUID": "28b347f6-13f8-4ba6-93fd-281a16666821",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3a5dcb4d-dbb0-4afc-82cb-671abd2dc395",
+            "308240e7-0cb5-4e06-a2ad-ad8634ba9165"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 5000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 60000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": "true",
+        "reportTitle": "My Custom Title",
+        "showPassed": "false"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
